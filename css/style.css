@@ -39,6 +39,7 @@ body {
 }
 
 .landing {
+  position: relative;
   left: 0;
   top: 0;
   height: 675px;
@@ -82,7 +83,7 @@ body {
   text-decoration: none;
   line-height: 50px;
   padding: 2px 7px;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 
 .landing .navigation ul li a:before {
