@@ -28,7 +28,7 @@ body {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   transition: all 0.5s ease;
   box-sizing: border-box;
-  padding: 0 15px 0 15px;
+  padding: 0 35px 0 15px;
 }
 
 .navbar.blue {
@@ -45,6 +45,7 @@ body {
   line-height: 50px;
   font-weight: 300;
   max-width: 35%;
+  display: inline-block;
 }
 
 .navbar ul {
@@ -53,10 +54,30 @@ body {
   text-align: center;
   float: right;
   height: 50px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar ul li {
-  display: inline;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin: 0 5px 0 5px;
+}
+
+.navbar ul li a {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  line-height: 50px;
+  text-decoration: none;
+  color: #EEEEEE;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #2C3E50;
 }
 
 .main {
@@ -82,6 +103,9 @@ body {
   left: 0;
   width: 100%;
   height: 50px;
+  padding: 0 25px 0 25px;
+  display: inline-block;
+  background: rgba(0,0,0,0.2);
 }
 
 .landing .navigation h1 {
@@ -89,6 +113,9 @@ body {
   color: #FAFAFA;
   font-weight: 300;
   float: left;
+  display: inline-block;
+  margin: 0;
+  line-height: 50px;
 }
 
 .landing .navigation ul {
@@ -96,12 +123,13 @@ body {
   color: #FAFAFA;
   text-align: center;
   float: right;
-  margin-right: 25px;
   height: 50px;
+  display: inline-block;
+  margin: 0;
 }
 
 .landing .navigation ul li {
-  display: inline;
+  display: inline-block;
 }
 
 .landing .navigation ul li a {
@@ -157,13 +185,25 @@ body {
 
 .landing-content h1:after {
   margin-top: 0.5em;
-  background: #ECECEC;
+  background: -moz-linear-gradient(left center, transparent, white, transparent);
+  background: -webkit-gradient(linear, left center, right center,
+    color-stop(0, transparent),
+    color-stop(0.4, white),
+    color-stop(0.5, white),
+    color-stop(0.6, white),
+    color-stop(1, transparent));
   content: '';
   display: block;
   height: 2px;
   margin: 0.75em auto 0 auto;
   position: relative;
   width: 8em;
+  border:none;
+  -webkit-animation:  h1-grow 6s infinite;
+  -moz-animation:  h1-grow 6s infinite;
+  -o-animation:  h1-grow 6s infinite;
+  animation: h1-grow 6s infinite;
+  transition: all 0.5s ease;
 }
 
 .landing-content p {
@@ -289,8 +329,8 @@ body {
 
 .card-profile .seperator-secondary {
   position: relative;
-  width: 0;
-  height: 25px;
+  width: 100%;
+  height: 0;
   top: -25px;
   background: #2C3E50;
   transition: all 0.2s ease;
@@ -298,7 +338,7 @@ body {
 }
 
 .card-profile:hover .seperator-secondary {
-  width: 100%;
+  height: 25px;
 }
 
 .card-profile .seperator a.title {
@@ -347,4 +387,25 @@ body {
   -webkit-animation: arrow-jump 2s infinite;
   -moz-animation: arrow-jump 2s infinite -o-animation: arrow-jump 2s infinite;
   animation: arrow-jump 2s infinite;
+}
+
+@-webkit-keyframes h1-grow {
+  0% {
+    width: 8em;
+  },
+  20% {
+    width:  7em;
+  },
+  40% {
+    width:  6em;
+  },
+  60% {
+    width:  7em;
+  },
+  80% {
+    width: 8em;
+  },
+  100% {
+    width:  9em;
+  },
 }
