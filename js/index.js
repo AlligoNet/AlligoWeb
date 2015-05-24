@@ -1,13 +1,18 @@
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 100) {
-      $('.navbar').css({
-        "top": "0"
-      });
-    } else {
-      $('.navbar').css({
-        "top": "-50px"
-      });
-    }
-  });
+$('#registermodal').easyModal({
+	top: 200,
+	overlay : 0.2
+});
+
+$('#loginmodal').easyModal({
+	overlay : 0.4,
+	overlayClose: false
+});
+
+$('#open-registermodal').click(function(e){
+	$('#registermodal').trigger('openModal');
+});
+
+$('#open-loginmodal').click(function(e){
+	$('#loginmodal').trigger('openModal');
+	e.preventDefault();
 });
