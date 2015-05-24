@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>OracleNet</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/buttons-min.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <!--<div class="navbar gray">
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>OracleNet</title>
+        
+        <meta name="description" content="The solution to playing LAN games with friends, anywhere.">
+        <meta name="keywords" content="OracleNet, ON, VPN, Tunnel, Gaming, LAN, local, system link">
+        <meta name="author" content="Quinton Marchi, uplusion23">
+        
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/buttons-min.css">
+		<link rel="stylesheet" href="css/style.css">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+	</head>
+
+	<body>
+		<!--<div class="navbar gray">
       <h1 class="brand-name">OracleNet</h1>
           <ul>
             <li class="item"><button class="pure-button">Info</button></li>
@@ -16,82 +24,103 @@
             <li class="item"><button class="button-black-border pure-button" style="">Register</button></li>
           </ul>
     </div>-->
-    <div class="main">
-      <div class="landing">
-        <div class="navigation">
-          <h1 class="brand-name">OracleNet</h1>
-          <ul>
-            <li class="item"><a href="#">Info</a></li>
-            <li class="item"><a href="#">Browser</a></li>
-            <li class="item"><button id="open-loginmodal" class="pure-button">Login</button></li>
-            <li class="item"><button id="open-registermodal" class="button-secondary pure-button" style="">Register</button></li>
-          </ul>
-        </div>
-        <!--<video autoplay loop poster="#" id="bgvid">
+		<div class="main">
+			<div class="landing">
+				<div class="navigation">
+					<h1 class="brand-name">OracleNet</h1>
+					<ul>
+						<li class="item"><a href="#">Info</a></li>
+						<li class="item"><a href="#">Browser</a></li>
+						<li class="item">
+							<button id="open-loginmodal" class="pure-button">Login</button>
+						</li>
+						<li class="item">
+							<button id="open-registermodal" class="button-secondary pure-button" style="">Register</button>
+						</li>
+					</ul>
+				</div>
+				<!--<video autoplay loop poster="#" id="bgvid">
           <source src="http://uplusion23.github.io/cdn/video/reach.mp4" type="video/webm">
             <source src="http://uplusion23.github.io/cdn/video/reach.mp4" type="video/mp4">
           </video>-->
-        <div class="landing-content">
-          <h1>Welcome</h1>
-          <p>The Solution to play any LAN game, around the world.</p>
-          <button class="button-secondary pure-button">Download Now</button>
-        </div>
-        <!--<div class="arrow"></div>-->
-      </div>
-      <div class="container">
-        <div class="main">
-          <div class="section group">
-            <div class="col span_1_of_3">
-              <div class="card-profile">
-                <div class="image">
-                  <img src="http://i.gyazo.com/1b70c5651f38a2e509347cca42fbab5f.png">
-                  <h1>uplusion23</h1>
-                </div>
-                <div class="seperator"><a class="title">Web Design</a></div>
-                <div class="seperator-secondary"></div>
-              </div>
-            </div>
-            <div class="col span_1_of_3">
-              <div class="card-profile">
-                <div class="image">
-                  <img src="http://i.gyazo.com/f8a9f786eb52af335f1989124b730d97.jpg">
-                  <h1>GIJames</h1>
-                </div>
-                <div class="seperator"><a class="title">Web Backend</a></div>
-                <div class="seperator-secondary"></div>
-              </div>
-            </div>
-            <div class="col span_1_of_3">
-              <div class="card-profile">
-                <div class="image">
-                  <img src="http://i.gyazo.com/1b70c5651f38a2e509347cca42fbab5f.png">
-                  <h1>qmarchi</h1>
-                </div>
-                <div class="seperator"><a class="title">Development</a></div>
-                <div class="seperator-secondary"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      
-      <div id="registermodal" class="col span_1_of_3">
-          
-          <div class="modal card-profile">
-            <div class="modal-header">
-                <img src="http://urlm.co/blog/wp-content/uploads/woodtexture11.jpg">
-                <h1>Register</h1>
-            </div>
-              
-            <h1 style="text-align: center;"></h1>
-          </div>
-	
-	
-</div>
-      
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="js/jquery.easyModal.js"></script>
-    <script src="js/index.js"></script>
-  </body>
+				<div class="landing-content">
+					<h1>Welcome</h1>
+					<p>The Solution to play any LAN game, around the world.</p>
+					<button class="button-secondary pure-button">Download Now</button>
+				</div>
+				<!--<div class="arrow"></div>-->
+			</div>
+			<div class="container">
+				<div class="main">
+					<div class="section group">
+						<div class="col span_1_of_3">
+							<div class="card-profile">
+								<div class="image">
+									<img src="http://i.gyazo.com/1b70c5651f38a2e509347cca42fbab5f.png">
+									<h1>uplusion23</h1>
+								</div>
+								<div class="seperator"><a class="title">Web Design</a></div>
+								<div class="seperator-secondary"></div>
+							</div>
+						</div>
+						<div class="col span_1_of_3">
+							<div class="card-profile">
+								<div class="image">
+									<img src="http://i.gyazo.com/f8a9f786eb52af335f1989124b730d97.jpg">
+									<h1>GIJames</h1>
+								</div>
+								<div class="seperator"><a class="title">Web Backend</a></div>
+								<div class="seperator-secondary"></div>
+							</div>
+						</div>
+						<div class="col span_1_of_3">
+							<div class="card-profile">
+								<div class="image">
+									<img src="http://i.gyazo.com/1b70c5651f38a2e509347cca42fbab5f.png">
+									<h1>qmarchi</h1>
+								</div>
+								<div class="seperator"><a class="title">Development</a></div>
+								<div class="seperator-secondary"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="registermodal" class="col span_1_of_3">
+
+			<div class="modal card-profile">
+				<div class="modal-header">
+					<img src="http://urlm.co/blog/wp-content/uploads/woodtexture11.jpg">
+					<h1>Register</h1>
+				</div>
+                
+				<form action="">
+					<div class="txt">
+						<label for="username">Username:</label>
+						<input type="text" name="" id="username">
+					</div>
+					<div class="txt">
+						<label for="email">Email:</label>
+						<input type="text" name="" id="email">
+					</div>
+					<div class="txt">
+						<label for="password">Password:</label>
+						<input type="password" name="" id="password">
+					</div>
+					<div class="txt">
+                        <div class="g-recaptcha" data-sitekey="6LfDUQcTAAAAALV6Ffae1aU3wWxiUDPO7oXjnBWd" style="    margin-left: auto; margin-right: auto; width: 99%;"></div>
+                    </div>
+				</form>
+                
+			</div>
+
+		</div>
+
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src="js/jquery.easyModal.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+
 </html>
