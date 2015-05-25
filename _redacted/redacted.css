@@ -1,0 +1,172 @@
+.card-profile {
+  background: #ECECEC;
+  border-radius: 0px;
+  width: 400px;
+  min-height: 500px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  margin: auto;
+}
+
+.card-profile .image {
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  top: 0;
+  height: 300px;
+  width: 400px;
+  background: #111111;
+}
+
+.card-profile .image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-100px) translateX(-100px);
+  transition: all 0.2s ease;
+  opacity: 0.9;
+}
+
+.card-profile .image:hover img {
+  opacity: 0.5;
+}
+
+.card-profile .image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translateY(-50%) translateX(-50%) scale(0.85);
+  font-weight: 300;
+  color: #a911b5;
+  opacity: 0;
+  transition: all 0.2s ease;
+  size: 150%;
+  text-align: center;
+  cursor: default;
+}
+
+.card-profile .image:hover h1 {
+  opacity: 1;
+  left: 50%;
+  size: 100%;
+  transform:  translateY(-50%) translateX(-50%) scale(1);
+}
+
+.card-profile .seperator {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  background: #a911b5;
+}
+
+.card-profile .seperator-secondary {
+  position: relative;
+  width: 100%;
+  height: 0;
+  top: -25px;
+  background: #7c0c84;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.card-profile:hover .seperator-secondary {
+  height: 25px;
+}
+
+.card-profile .seperator a.title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #FAFAFA;
+  white-space: nowrap;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.1s ease;
+}
+
+.card-profile:hover .seperator a.title {
+  opacity: 1;
+}
+
+.modal .modal-header {
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  top: 0;
+  height: 100px;
+  width: 400px;
+  background: #111111;
+}
+
+.modal .modal-header h1 {
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 10px;
+  font-weight: 300;
+  color: #a911b5;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 1;
+  transition: all 0.2s ease;
+  size: 150%;
+  text-align: center;
+  cursor: default;
+}
+
+.modal .modal-header img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.2s ease;
+  opacity: 0.9;
+}
+
+.modal form {
+    padding-top: 20px;
+}
+
+.modal .txt {
+	padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal .txt input {
+	width: 220px;
+	height: 40px;
+	padding: 5px;
+	border: 1px solid #CCC;
+}
+
+.modal .txt label {
+	float: left;
+	width: 120px;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+.modal .btn {
+	padding: 10px 20px 10px 140px;
+}
+
+.modal .btn a {
+	float: left;
+	padding: 0 20px;
+	line-height: 28px;
+	background: #049CDB;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 14px;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+	color: #FFF;
+	margin: 0 10px 0 0;
+	border: none;
+}
+
+.modal .btn a.cancel {
+	background: #DDDDDD;
+	box-shadow: none;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+}

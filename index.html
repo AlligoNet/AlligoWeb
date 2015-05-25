@@ -3,39 +3,45 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>OracleNet</title>
+		<title>Alligo</title>
         
         <meta name="description" content="The solution to playing LAN games with friends, anywhere.">
         <meta name="keywords" content="OracleNet, ON, VPN, Tunnel, Gaming, LAN, local, system link">
         <meta name="author" content="Quinton Marchi, uplusion23">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
-		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/buttons-min.css">
-		<link rel="stylesheet" href="css/style.css">
+        
+		    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
 
 	<body>
-		<!--<div class="navbar gray">
-      <h1 class="brand-name">OracleNet</h1>
-          <ul>
-            <li class="item"><button class="pure-button">Info</button></li>
-            <li class="item"><button class="pure-button">Browser</button></li>
-            <li class="item"><button class="pure-button">Login</button></li>
-            <li class="item"><button class="button-black-border pure-button" style="">Register</button></li>
-          </ul>
-    </div>-->
+		<div class="navbar gray">
+      <h1 class="brand-name">Alligo</h1>
+      <ul>
+        <!--<li class="item"><a href="#">Info</a></li>-->
+        <li class="item"><a href="/browser/">Browser</a></li>
+        <li class="item">
+          <button id="login" class="block-button">Login</button>
+        </li>
+        <li class="item">
+          <button id="register" class="button-secondary block-button" style="">Register</button>
+        </li>
+      </ul>
+    </div>
 		<div class="main">
 			<div class="landing">
 				<div class="navigation">
-					<h1 class="brand-name">OracleNet</h1>
+					<h1 class="brand-name">Alligo</h1>
 					<ul>
 						<li class="item"><a href="#">Info</a></li>
 						<li class="item"><a href="#">Browser</a></li>
 						<li class="item">
-							<button id="open-loginmodal" class="pure-button">Login</button>
+							<button id="login" class="block-button">Login</button>
 						</li>
 						<li class="item">
-							<button id="open-registermodal" class="button-secondary pure-button" style="">Register</button>
+							<button id="register" class="button-secondary block-button" style="">Register</button>
 						</li>
 					</ul>
 				</div>
@@ -46,80 +52,84 @@
 				<div class="landing-content">
 					<h1>Welcome</h1>
 					<p>The Solution to play any LAN game, around the world.</p>
-					<button class="button-secondary pure-button">Download Now</button>
+					<button class="button-secondary block-button fade">Download Now</button>
 				</div>
 				<!--<div class="arrow"></div>-->
 			</div>
-			<div class="container">
-				<div class="main">
-					<div class="section group">
-						<div class="col span_1_of_3">
-							<div class="card-profile">
-								<div class="image">
-									<img src="http://i.gyazo.com/1b70c5651f38a2e509347cca42fbab5f.png">
-									<h1>uplusion23</h1>
-								</div>
-								<div class="seperator"><a class="title">Web Design</a></div>
-								<div class="seperator-secondary"></div>
-							</div>
-						</div>
-						<div class="col span_1_of_3">
-							<div class="card-profile">
-								<div class="image">
-									<img src="http://i.gyazo.com/f8a9f786eb52af335f1989124b730d97.jpg">
-									<h1>GIJames</h1>
-								</div>
-								<div class="seperator"><a class="title">Web Backend</a></div>
-								<div class="seperator-secondary"></div>
-							</div>
-						</div>
-						<div class="col span_1_of_3">
-							<div class="card-profile">
-								<div class="image">
-									<img src="http://i.gyazo.com/1b70c5651f38a2e509347cca42fbab5f.png">
-									<h1>qmarchi</h1>
-								</div>
-								<div class="seperator"><a class="title">Development</a></div>
-								<div class="seperator-secondary"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="registermodal" class="col span_1_of_3">
-
-			<div class="modal card-profile">
-				<div class="modal-header">
-					<img src="http://urlm.co/blog/wp-content/uploads/woodtexture11.jpg">
-					<h1>Register</h1>
-				</div>
-                
-				<form action="">
-					<div class="txt">
-						<label for="username">Username:</label>
-						<input type="text" name="" id="username">
-					</div>
-					<div class="txt">
-						<label for="email">Email:</label>
-						<input type="text" name="" id="email">
-					</div>
-					<div class="txt">
-						<label for="password">Password:</label>
-						<input type="password" name="" id="password">
-					</div>
-					<div class="txt">
-                        <div class="g-recaptcha" data-sitekey="6LfDUQcTAAAAALV6Ffae1aU3wWxiUDPO7oXjnBWd" style="    margin-left: auto; margin-right: auto; width: 99%;"></div>
-                    </div>
-				</form>
-                
-			</div>
-
-		</div>
-
+      <div class="large-demo blue anchor">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="constrict">
+                <h2 class="title">Alligo is a <strong>free</strong> VPN to play with gamers on LAN-Only networks.</h2>
+                <p class="lead">
+                  Quickly connect to friends and family, and play co-op or multiplayer games, without having to go through the trouble of hosting dedicated servers.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <i class="fa fa-cube"></i>
+						  <h3>Simple Connections</h3>
+						  <p>Simply log in with your Alligo username and password using our secure servers, select the closest server to you, and hit connect!</p>
+						  <button type="button">Learn More</button>
+					  </div>
+            <div class="col-md-3">
+              <i class="fa fa-bolt"></i>
+						  <h3>Fast as lightning!</h3>
+						  <p>Running on energy drinks, little sleep, and top tier servers, you can connect quickly without the need for watching a "connecting..." icon.</p>
+						  <button type="button">Learn More</button>
+					  </div>
+            <div class="col-md-3">
+              <i class="fa fa-line-chart"></i>
+						  <h3>Reliable</h3>
+						  <p>Nearly 100% up-time, and running multiple servers around the world, downtime is to near-nothing, so you can always game!</p>
+						  <button type="button">Learn More</button>
+					  </div>
+            <div class="col-md-3">
+              <i class="fa fa-lock"></i>
+						  <h3>Secure</h3>
+						  <p>What's the point of running a service if it's risky? We've thrown in security checks to fix that, and can guarantee safety.</p>
+						  <button type="button">Learn More</button>
+					  </div>
+				  </div>
+        </div>
+      </div>
+      <div class="large-demo grey anchor">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="constrict">
+                <h2 class="title">Alligo is for any gamer, and all gamers.</h2>
+                <p class="lead">
+                  We strive to keep our application as easy to understand as possible, as well as making it as smooth as possible.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+						  <h2>Simple Interface</h2>
+						  <p>As described above, all you have to do is enter your username and password, select your server, and login!</p>
+						  <button type="button" class="btn btn-secondary">Download</button>
+					  </div>
+            <div class="col-md-6">
+              <img src="http://i.gyazo.com/15acfaa20ff4426ab8c914b74c36e262.png">
+					  </div>
+				  </div>
+        </div>
+      </div>
+      <div class="large-demo green anchor">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Footer</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cover"></div>
+    <div class="modal register">
+    </div>
 		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-		<script src="js/jquery.easyModal.js"></script>
 		<script src="js/index.js"></script>
 	</body>
 
