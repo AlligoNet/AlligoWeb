@@ -15,12 +15,16 @@ $(document).ready(function() {
     }
   });
   
-  $("#register").click(function() {
+  $("#login, #login").click(function() {
+    $(".modal.login").toggleClass("active");
+    $(".cover").toggleClass("active");
+  });
+  $("#register, #register").click(function() {
     $(".modal.register").toggleClass("active");
     $(".cover").toggleClass("active");
   });
   $(".cover").click(function() {
-    $(".modal.register").toggleClass("active");
+    $(".modal.active").toggleClass("active");
     $(".cover").toggleClass("active");
   });
 });
