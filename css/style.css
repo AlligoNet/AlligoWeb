@@ -450,7 +450,7 @@ body {
   transform: translateX(-50%) translateY(-50%);
   background: rgba(245,245,245,1);
   width: 500px;
-  height: 500px;
+  min-height: 500px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   transition: all 0.5s ease;
 }
@@ -526,6 +526,10 @@ body {
 .modal .group { 
 	position: relative; 
 	margin-bottom: 45px; 
+}
+
+.modal .group.captcha {
+  min-height: 55px;
 }
 
 .modal input {
