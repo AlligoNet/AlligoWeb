@@ -763,6 +763,10 @@ div[class^='col-md-'],div[class*=' col-md-'] {
   max-width: 400px;
   min-height: 40px;
   border-radius: 4px;
+  z-index: 997;
+  position: fixed;
+  left: 25px;
+  bottom: 25px;
   padding: 7px 10px 7px 10px;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
 }
