@@ -38,7 +38,7 @@ session_start();
         <div class="landing-content">
           <h1>Welcome</h1>
           <p>The Solution to play any LAN game, around the world.</p>
-          <button class="button-secondary block-button fade">Download Now</button>
+          <a class="button-secondary block-button fade" <?php include 'latestLink.php;' ?>>Download Now</a>
         </div>
         <!--<div class="arrow"></div>-->
       </div>
@@ -94,7 +94,7 @@ session_start();
             <div class="col-md-6">
               <h2>Simple Interface</h2>
               <p>As described above, all you have to do is enter your username and password, select your server, and login!</p>
-              <button type="button" class="btn btn-secondary">Download</button>
+              <a type="button" class="btn btn-secondary" <?php include 'latestLink.php;' ?>>Download</a>
             </div>
             <div class="col-md-6">
               <img src="http://i.gyazo.com/15acfaa20ff4426ab8c914b74c36e262.png">
