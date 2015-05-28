@@ -3,25 +3,39 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html>
-  <head>
+	<head>
     <?php include 'login.php'; ?>
-    <meta charset="UTF-8">
+		<meta charset="UTF-8">
     <title>Alligo</title>
     <meta name="description" content="The solution to playing LAN games with friends, anywhere.">
     <meta name="keywords" content="OracleNet, ON, VPN, Tunnel, Gaming, LAN, local, system link">
     <meta name="author" content="Quinton Marchi, uplusion23">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src='https://www.google.com/recaptcha/api.js'></script>
-  </head>
-  <body>
+	</head>
+  
+	<body>
+    <!--<div class="navbar gray">
+      <h1 class="brand-name">Alligo</h1>
+      <ul>
+        <li class="item"><a href="#">Info</a></li>
+        <li class="item"><a href="#">Browser</a></li>
+        <li class="item">
+          <button id="login" class="block-button">Login</button>
+        </li>
+        <li class="item">
+          <button id="register" class="button-secondary block-button" style="">Register</button>
+        </li>
+      </ul>
+    </div>-->
     <div class="main">
-      <div class="landing">
-        <div class="navigation">
-          <h1 class="brand-name">Alligo</h1>
-          <ul>
-            <!--<li class="item"><a href="#">Info</a></li>-->
+			<div class="landing">
+				<div class="navigation">
+					<h1 class="brand-name">Alligo</h1>
+					<ul>
+						<!--<li class="item"><a href="#">Info</a></li>-->
             <li class="item"><a target="_blank" href="browser/">Browser</a></li>
             <li class="item">
               <button id="login" class="block-button">Login</button>
@@ -35,13 +49,13 @@ session_start();
           <source src="http://uplusion23.github.io/cdn/video/reach.mp4" type="video/webm">
             <source src="http://uplusion23.github.io/cdn/video/reach.mp4" type="video/mp4">
           </video>-->
-        <div class="landing-content">
-          <h1>Welcome</h1>
-          <p>The Solution to play any LAN game, around the world.</p>
-          <a class="button-secondary block-button fade" <?php include 'latestLink.php;' ?>>Download Now</a>
-        </div>
-        <!--<div class="arrow"></div>-->
-      </div>
+				<div class="landing-content">
+					<h1>Welcome</h1>
+					<p>The Solution to play any LAN game, around the world.</p>
+					<a target="_blank" href="https://alligo.co/alligo_latest.zip" class="button-secondary block-button fade" id="#download-oracle">Download Now</a>
+				</div>
+				<!--<div class="arrow"></div>-->
+			</div>
       <div class="large-demo blue anchor">
         <div class="container">
           <div class="row">
@@ -94,12 +108,14 @@ session_start();
             <div class="col-md-6">
               <h2>Simple Interface</h2>
               <p>As described above, all you have to do is enter your username and password, select your server, and login!</p>
-              <a type="button" class="btn btn-secondary" <?php include 'latestLink.php;' ?>>Download</a>
+              <button type="button" class="btn btn-secondary">Download</button>
             </div>
             <div class="col-md-6">
-              <img src="http://i.gyazo.com/15acfaa20ff4426ab8c914b74c36e262.png">
-            </div>
-          </div>
+              <div class="image">
+                <img src="http://i.imgur.com/RIEZbs3.jpg">
+              </div>
+					  </div>
+				  </div>
         </div>
       </div>
       <div class="large-demo green anchor">
@@ -159,7 +175,7 @@ session_start();
       </form>
     </div>
     <div class="messagebox blue"><span class="title">This website is not done!</span>Look, we're students, who have 'lives' doing other things. This website isn't done, but we're working on it! Thanks for your patience.</div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/index.js"></script>
   </body>
 </html>
