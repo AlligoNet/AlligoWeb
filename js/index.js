@@ -3,17 +3,13 @@ $(document).ready(function() {
     var anchor = $(".anchor").offset().top;
     if($(this).scrollTop() > anchor) {
       var anchorColor = $(".anchor").css('backgroundColor');
-      $('.navbar').css({"backgroundColor":anchorColor});
+      $('.navigation').css({"backgroundColor":anchorColor});
     } else {
-      $('.navbar').css({"backgroundColor":"rgba(0,0,0,0.5)"});
-    }
-   var y = $(document).scrollTop();
-    if (y > 100) {
-      $('.navbar').addClass("active");
-    } else {
-      $('.navbar').removeClass("active");
+      $('.navigation').css({"backgroundColor":"rgba(0,0,0,0.5)"});
     }
   });
+  
+  
   
   $("#login, #login").click(function() {
     $(".modal.login").toggleClass("active");
@@ -28,5 +24,7 @@ $(document).ready(function() {
     $(".cover").toggleClass("active");
   });
   
+  
+  $(".messagebox").css('left','25px');
   setTimeout(function(){ $(".messagebox").css('bottom','-125px'); $(".messagebox").css('opacity','0'); },12000)
 });

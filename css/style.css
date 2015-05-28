@@ -126,6 +126,9 @@ body {
   padding: 0 25px 0 25px;
   display: inline-block;
   background: rgba(0,0,0,0.2);
+  transition: all 0.5s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  z-index: 999;
 }
 
 .landing .navigation h1 {
@@ -241,6 +244,16 @@ body {
   z-index: -100;
   background: url(#) no-repeat;
   background-size: cover;
+}
+
+.image {
+  width: auto;
+  height: 500px;
+  overflow: hidden;
+}
+
+.image img {
+  max-height: 100%;
 }
 
 /* ************************************ */
@@ -765,7 +778,7 @@ div[class^='col-md-'],div[class*=' col-md-'] {
   border-radius: 4px;
   z-index: 997;
   position: fixed;
-  left: 25px;
+  left: -455px;
   bottom: 25px;
   padding: 7px 10px 7px 10px;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
