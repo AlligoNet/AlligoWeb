@@ -44,7 +44,7 @@ session_start();
               <button id="controlPanel" class="block-button">' . $_SESSION["name"] . '</button>
             </li>
             <li class="item">
-              <button id="logOut"  class="button-secondary block-button">Log Out</button>
+              <a href="index.php?action=logOut"  class="button-secondary block-button">Log Out</a>
             </li>';
 	    }
 	    else{
