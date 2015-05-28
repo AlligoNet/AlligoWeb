@@ -9,6 +9,8 @@ $(document).ready(function() {
     }
   });
   
+  
+  
   $("#login, #login").click(function() {
     $(".modal.login").toggleClass("active");
     $(".cover").toggleClass("active");
@@ -22,5 +24,7 @@ $(document).ready(function() {
     $(".cover").toggleClass("active");
   });
   
+  
+  $(".messagebox").css('left','25px');
   setTimeout(function(){ $(".messagebox").css('bottom','-125px'); $(".messagebox").css('opacity','0'); },12000)
 });
