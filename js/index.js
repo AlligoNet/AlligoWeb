@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $(window).scroll(function(){
     var anchor = $(".anchor").offset().top;
-    if($(this).scrollTop() > anchor) {
+    if($(this).scrollTop() > anchor - 50) {
       var anchorColor = $(".anchor").css('backgroundColor');
       $('.navigation').css({"backgroundColor":anchorColor});
     } else {
