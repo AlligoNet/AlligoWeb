@@ -1,5 +1,5 @@
 <?php
-		//ini_set('display_errors', 1); error_reporting(E_ALL);
+		ini_set('display_errors', 1); error_reporting(E_ALL);
 		if($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['name']) && !empty($_POST['password'])){
 			if(!empty($_POST['email'])){
 				//register new user
