@@ -117,7 +117,7 @@ session_start();
       <div class="top">
         <h2 class="title">Login</h2>
       </div>
-      <form class="login">
+      <form class="login" method="post">
         <div class="group">
           <input type="text" required autocomplete="off"><span class="highlight"></span><span class="bar"></span>
           <label>Username</label>
@@ -136,7 +136,7 @@ session_start();
       <div class="top">
         <h2 class="title">Register</h2>
       </div>
-      <form class="register">
+      <form class="register" method="post">
         <div class="group">
           <input type="text" required autocomplete="off"><span class="highlight"></span><span class="bar"></span>
           <label>Username</label>
@@ -144,6 +144,10 @@ session_start();
         <div class="group">
           <input type="password" required autocomplete="off"><span class="highlight"></span><span class="bar"></span>
           <label>Password</label>
+        </div>
+        <div class="group">
+          <input type="email" required autocomplete="off"><span class="highlight"></span><span class="bar"></span>
+          <label>Email</label>
         </div>
         <div class="group captcha">
           <div class="g-recaptcha" data-sitekey="6LfDUQcTAAAAALV6Ffae1aU3wWxiUDPO7oXjnBWd"></div>
