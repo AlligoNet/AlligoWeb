@@ -200,6 +200,13 @@ session_start();
       
     </div>
     <div class="messagebox blue"><span class="title">This website is not done!</span>Look, we're students, who have 'lives' doing other things. This website isn't done, but we're working on it! Thanks for your patience.</div>
+      <?php 
+        if(isset($err) | isset($nameerr) || isset($emailerr) || isset($pwerr)){
+         echo '<div class="messagebox blue"><span class="title">' . $err . '</span>';
+         echo $nameerr . $emailerr . $pwerr; 
+         echo '</div>';
+        }
+      ?>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/index.js"></script>
   </body>
