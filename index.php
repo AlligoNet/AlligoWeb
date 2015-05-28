@@ -37,12 +37,25 @@ session_start();
 					<ul>
 						<!--<li class="item"><a href="#">Info</a></li>-->
             <li class="item"><a target="_blank" href="browser/">Browser</a></li>
+              <?php
+	
+	     if(isset($_SESSION["name"])){
+		  echo '<li class="item">
+              <button id="controlPanel" class="block-button">' . $_SESSION["name"] . '</button>
+            </li>
             <li class="item">
+              <button id="logOut"  class="button-secondary block-button">Log Out</button>
+            </li>';
+	    }
+	    else{
+		  echo '<li class="item">
               <button id="login" class="block-button">Login</button>
             </li>
             <li class="item">
               <button id="register" class="button-secondary block-button">Register</button>
-            </li>
+            </li>';
+            }
+            ?>
           </ul>
         </div>
         <!--<video autoplay loop poster="#" id="bgvid">
@@ -112,7 +125,7 @@ session_start();
             </div>
             <div class="col-md-6">
               <div class="image">
-                <img src="http://i.imgur.com/RIEZbs3.jpg">
+                <img src="https://i.imgur.com/RIEZbs3.jpg">
               </div>
 					  </div>
 				  </div>
@@ -173,6 +186,12 @@ session_start();
           <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
         </button>
       </form>
+    </div>
+    <div class="modal controlPanel">
+      <div class="top">
+        <h2 class="title">User Control Panel</h2>
+      </div>
+      
     </div>
     <div class="messagebox blue"><span class="title">This website is not done!</span>Look, we're students, who have 'lives' doing other things. This website isn't done, but we're working on it! Thanks for your patience.</div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
