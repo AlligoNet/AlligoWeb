@@ -21,4 +21,6 @@ $(document).ready(function() {
     $(".modal.active").toggleClass("active");
     $(".cover").toggleClass("active");
   });
+  
+  setTimeout(function(){ $(".messagebox").css('bottom','-125px'); $(".messagebox").css('opacity','0'); },12000)
 });
