@@ -11,7 +11,7 @@ session_start();
     <meta name="keywords" content="OracleNet, ON, VPN, Tunnel, Gaming, LAN, local, system link">
     <meta name="author" content="Quinton Marchi, uplusion23">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
@@ -217,6 +217,6 @@ session_start();
         }
       ?>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="js/index.js"></script>
+    <script src="js/index2.js"></script>
   </body>
 </html>
