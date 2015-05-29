@@ -15,7 +15,7 @@
 					$nameerr = "Please use a user name under 30 characters.<br>";
 				}
 				$password = $_POST['password'];
-				if(strlen($password) > 253 || strlen($_POST['name']) < 8){
+				if(strlen($password) > 253 || strlen($_POST['password']) < 8){
 					$pwerr = "Please use a password between 8 and 253 characters.<br>";
 				}
 			
