@@ -44,7 +44,7 @@ session_start();
               <button id="controlPanel" class="block-button">' . $_SESSION["name"] . '</button>
             </li>
             <li class="item">
-            <form action="?action=logOut">
+            <form action="index.php?action=logOut">
               <!--<input style="display:none" type="text" name="action" value="logOut">-->
               <button type="submit" class="button-secondary block-button">Log Out</button>
             </form>
