@@ -44,7 +44,7 @@ session_start();
               <button id="controlPanel" class="block-button">' . $_SESSION["name"] . '</button>
             </li>
             <li class="item">
-            <form>
+            <form method="post">
               <input style="display:none" type="text" name="action" value="logOut">
               <button type="submit" class="button-secondary block-button">Log Out</button>
             </form>
@@ -156,6 +156,7 @@ session_start();
         <h2 class="title">Login</h2>
       </div>
       <form class="login" method="post">
+        <input style="display:none" type="text" name="action" value="login">
         <div class="group">
           <input type="text" name="name" required autocomplete="off"><span class="highlight"></span><span class="bar"></span>
           <label>Username</label>
@@ -175,6 +176,7 @@ session_start();
         <h2 class="title">Register</h2>
       </div>
       <form class="register" method="post">
+        <input style="display:none" type="text" name="action" value="register">
         <div class="group">
           <input type="text" name="name" required autocomplete="off"><span class="highlight"></span><span class="bar"></span>
           <label>Username</label>
