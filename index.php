@@ -124,7 +124,7 @@ session_start();
             <div class="col-md-6">
               <h2>Simple Interface</h2>
               <p>As described above, all you have to do is enter your username and password, select your server, and login!</p>
-              <button type="button" class="btn btn-secondary">Download</button>
+              <a target="_blank" href="https://alligo.co/alligo_latest.zip" type="button" class="btn btn-secondary block-button">Download</a>
             </div>
             <div class="col-md-6">
               <div class="image">
