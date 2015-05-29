@@ -202,6 +202,9 @@ session_start();
     
       <?php 
         if(isset($err) | isset($nameerr) || isset($emailerr) || isset($pwerr)){
+          if(!isset($err)){
+            $err = "Problems were found with your input:<br>";
+          }
          echo '<div class="messagebox blue"><span class="title">' . $err . '</span>';
          echo $nameerr . $emailerr . $pwerr; 
          echo '</div>';
