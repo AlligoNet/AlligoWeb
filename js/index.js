@@ -24,6 +24,10 @@ $(document).ready(function() {
     $(".cover").toggleClass("active");
   });
   
+  $("#controlPanel, #controlPanel").click(function() {
+    $(".modal.controlPanel").toggleClass("active");
+    $(".cover").toggleClass("active");
+  });
   
   $(".messagebox").css('left','25px');
   setTimeout(function(){ $(".messagebox").css('bottom','-125px'); $(".messagebox").css('opacity','0'); },12000)
