@@ -108,10 +108,12 @@
 				$err = "Problems were found with your input:<br>";
 			}
 		}
-		elseif($_GET['action'] == 'logOut'){
-			session_unset();
-			session_destroy();
-			$err = "Logged out successfully<br>";
+		elseif(isset($_GET['action'])){
+			if($_GET['action'] == 'logOut'){
+				session_unset();
+				session_destroy();
+				$err = "Logged out successfully<br>";
+			}
 		}
 		function clean($input){
 			return htmlspecialchars(stripslashes(trim($input)));
