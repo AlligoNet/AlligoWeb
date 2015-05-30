@@ -207,8 +207,6 @@ session_start();
             Change Password
             <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
         </button>
-      </form>
-      <form class="controlPanel">
         <button id="delete" class="button buttonBlue">
             Delete Account
             <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
