@@ -202,6 +202,19 @@ session_start();
       <div class="top">
         <h2 class="title">User Control Panel</h2>
       </div>
+      <button id="pwChange" class="button buttonBlue">
+          Change Password
+          <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+      </button>
+      <button id="delete" class="button buttonBlue">
+          Delete Account
+          <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+      </button>
+    </div>
+    <div class="modal pwChange">
+      <div class="top">
+        <h2 class="title">Change Password</h2>
+      </div>
       <form class="pwChange" method="post">
         <input style="display:none" type="text" name="action" value="pwChange">
         <div class="group">
@@ -217,6 +230,11 @@ session_start();
           <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
         </button>
       </form>
+    </div>
+    <div class="modal delete">
+      <div class="top">
+        <h2 class="title">Delete Account</h2>
+      </div>
       <form class="delete" method="post">
         <input style="display:none" type="text" name="action" value="delete">
         <div class="group">
