@@ -202,7 +202,32 @@ session_start();
       <div class="top">
         <h2 class="title">User Control Panel</h2>
       </div>
-      
+      <form class="pwChange" method="post">
+        <input style="display:none" type="text" name="action" value="pwChange">
+        <div class="group">
+          <input type="password" name="newpassword" required autocomplete="off"><span class="highlight"></span><span class="bar"></span>
+          <label>New Password</label>
+        </div>
+        <div class="group">
+          <input type="password" name="password" required autocomplete="off"><span class="highlight"></span><span class="bar"></span>
+          <label>Password</label>
+        </div>
+        <button type="submit" class="button buttonBlue">
+          Change Password
+          <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        </button>
+      </form>
+      <form class="delete" method="post">
+        <input style="display:none" type="text" name="action" value="delete">
+        <div class="group">
+          <input type="password" name="password" required autocomplete="off"><span class="highlight"></span><span class="bar"></span>
+          <label>Password</label>
+        </div>
+        <button type="submit" class="button buttonBlue">
+          Delete Account
+          <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        </button>
+      </form>
     </div>
     
       <?php 
