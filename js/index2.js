@@ -28,6 +28,14 @@ $(document).ready(function() {
     $(".modal.controlPanel").toggleClass("active");
     $(".cover").toggleClass("active");
   });
+  $("#delete, #delete").click(function() {
+    $(".modal.delete").toggleClass("active");
+    $(".cover").toggleClass("active");
+  });
+  $("#pwChange, #pwChange").click(function() {
+    $(".modal.pwChange").toggleClass("active");
+    $(".cover").toggleClass("active");
+  });
   
   $(".messagebox").css('left','25px');
   setTimeout(function(){ $(".messagebox").css('bottom','-125px'); $(".messagebox").css('opacity','0'); },12000)
