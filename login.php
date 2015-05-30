@@ -220,6 +220,12 @@
 					$err = 'Not logged in.<br>';
 				}
 			}
+			elseif($_POST['action'] == 'direct'){
+				
+			}
+			elseif($_POST['action'] == 'forgot'){
+				
+			}
 			$conn->close();
 		}
 		function clean($input){
