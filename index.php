@@ -202,7 +202,7 @@ session_start();
       <div class="top">
         <h2 class="title">User Control Panel</h2>
       </div>
-      <form class="controlPanel">
+      <div class="controlPanel">
         <button id="pwChange" class="button buttonBlue">
             Change Password
             <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
@@ -211,7 +211,7 @@ session_start();
             Delete Account
             <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
         </button>
-      </form>
+      </div>
     </div>
     <div class="modal pwChange">
       <div class="top">
