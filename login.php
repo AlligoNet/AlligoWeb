@@ -115,17 +115,58 @@
 				}
 			}
 			elseif($_POST['action'] == 'logOut'){
-				session_unset();
-				session_destroy();
-				$err = "Logged out successfully<br>";
+				if(isset($_SESSION['name'])){
+					session_unset();
+					session_destroy();
+					$err = 'Logged out successfully<br>';
+				}
+				else{
+					$err = 'Not logged in.<br>';
+				}
 			}
 			elseif($_POST['action'] == 'pwChange'){
 				if(isset($_SESSION['name'])){
+					$username = $_SESSION['name'];
+					$password = $_POST['newpassword'];
+					$oldpass = $_POST['password'];
+					$pwhash = password_hash($password, PASSWORD_BCRYPT);
 					
-					$err = "Password changed successfully<br>";
+					$searchUser = $conn->prepare("SELECT radcheck_crypt.value, radusergroup.groupname FROM (radcheck_crypt LEFT JOIN radusergroup ON radcheck_crypt.username = radusergroup.username) WHERE radcheck_crypt.username=?");
+					$searchUser->bind_param("s", $username);
+					$searchUser->execute();
+					$userFind = $searchUser->get_result();
+					$searchUser->close();
+					if($userFind->num_rows === 0){
+						$err = 'User not found';
+					}
+					else{
+						$userResult = $userFind->fetch_assoc();
+						$pwresult = $userResult['value'];
+						if(password_verify($oldpass , $pwresult)){
+							if($userResult['groupname'] === 'banned'){
+								$err = 'You are banned';
+							}
+							else{
+								$radCheckString = "UPDATE radcheck SET value=? WHERE username=?";
+								$setDirect = $conn->prepare($radCheckString);
+								$setDirect->bind_param("ss", $password, $username);
+								$setDirect->execute();
+								$setDirect->close();
+								$radCheckCryptString = "UPDATE radcheck_crypt SET value=? WHERE username=?";
+								$setDirect2 = $conn->prepare($radCheckCryptString);
+								$setDirect2->bind_param("ss", $pwhash, $username);
+								$setDirect2->execute();
+								$setDirect2->close();
+								$err = 'Password changed successfully.<br>';
+							}
+						}
+						else{
+							$err = 'Incorrect password<br>';
+						}
+					}
 				}
 				else{
-					$err = "Not logged in.";
+					$err = "Not logged in.<br>";
 				}
 			}
 			elseif($_POST['action'] == 'delete'){
@@ -146,7 +187,7 @@
 						$pwresult = $userResult['value'];
 						if(password_verify($password , $pwresult)){
 							if($userResult['groupname'] === 'banned'){
-								$err =  'You are banned';
+								$err =  'You are banned<br>';
 							}
 							else{
 								$update = $conn->prepare("DELETE FROM radcheck WHERE username=?");
@@ -171,7 +212,7 @@
 							}
 						}
 						else{
-							$err =  'ERROR:incorrect password<br>';
+							$err =  'Incorrect password<br>';
 						}
 					}
 				}
