@@ -30,11 +30,13 @@ $(document).ready(function() {
   });
   $("#delete, #delete").click(function() {
     $(".modal.delete").toggleClass("active");
-    $(".cover").toggleClass("active");
+    $(".modal.controlPanel").toggleClass("active");
+    //$(".cover").toggleClass("active");
   });
   $("#pwChange, #pwChange").click(function() {
     $(".modal.pwChange").toggleClass("active");
-    $(".cover").toggleClass("active");
+    $(".modal.controlPanel").toggleClass("active");
+    //$(".cover").toggleClass("active");
   });
   
   $(".messagebox").css('left','25px');
