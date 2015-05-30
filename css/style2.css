@@ -544,6 +544,22 @@ body {
   background: rgba(245,245,245,1);
 }
 
+.modal .delete {
+  display: block;
+	width: 400px;
+	margin: 7em auto;
+	padding: 3em 2em 2em 2em;
+  background: rgba(245,245,245,1);
+}
+
+.modal .pwChange {
+  display: block;
+	width: 400px;
+	margin: 7em auto;
+	padding: 3em 2em 2em 2em;
+  background: rgba(245,245,245,1);
+}
+
 .modal .group { 
 	position: relative; 
 	margin-bottom: 45px; 
