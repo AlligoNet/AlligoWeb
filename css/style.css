@@ -355,11 +355,6 @@ body {
   text-align: center;
 }
 
-.large-demo.grey {
-  background: #1e2024;
-  color: #FAFAFA;
-}
-
 .large-demo.grey .col-md-12 h2.title {
   font-size: 35px;
   font-weight: 300;
@@ -377,8 +372,13 @@ body {
   color: #FAFAFA;
 }
 
+.large-demo.grey {
+  background: #1e2024;
+  color: #FAFAFA;
+}
+
 .large-demo.green {
-  background: #3A539B;
+  background: #26A65B;
   color: #FAFAFA;
 }
 
